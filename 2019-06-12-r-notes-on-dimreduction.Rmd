@@ -2,25 +2,6 @@
 title: "R Notes on Dimensionality Reduction"
 author: "Luisa M. Mimmi"
 date: "Last run: `r format(Sys.time(), '%B %e, %Y')`"
-draft: true
-output:
-  blogdown::html_page:
-    toc: true
-    #toc_float: true # NOT AVAIL FOR HUGO ACADEMIC  https://github.com/rstudio/blogdown/issues/58
-    #smart: true
-image:
-  caption: ''
-  focal_point: ''
-slug: r-notes-on-dimreduction
-tags:
-  - dimensionality reduction
-  - PCA
-  - association
-  - outliers
-  - sequential patterns
-categories:
-  - Rtutorial
-summary: "Notes on Dimensionality Reduction - UNFINISHED" 
 ---
 
 
@@ -144,7 +125,7 @@ pacman::p_load(ggplot2, grid, gridExtra, robustbase)
 # DATA #####################################################
 
 # Import the data
-data = read.csv(here::here("content", "tutorial","data","AnomalyData.csv"))
+data = read.csv(here::here( "AnomalyData.csv"))
 
 # Structure of the data
 str(data)
